@@ -8,16 +8,18 @@
 
 body {
     margin: 0 auto;
+    padding: 0 12.5%;
+    background-color: white;
 }
 
 nav {
     height: var(--nav-height);
-    background-color: red;
     position: sticky;
     top: 0;
     padding: 0 15px;
     display: flex;
     align-items: center;
+    background-color: white;
 }
 
 nav > img {
@@ -26,10 +28,10 @@ nav > img {
 
 main {
     height: calc(100vh - var(--nav-height));
-    background-color: yellow;
+    background-color: whitesmoke;
 }
 
 footer {
     height: 100px;
-    background-color: blue;
+    background-color: white;
 }
