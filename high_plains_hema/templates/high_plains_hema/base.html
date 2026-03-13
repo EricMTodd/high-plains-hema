@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>High Plains HEMA || HEMA Alliance Cheyenne, Wyoming</title>
+        <link rel="stylesheet" href="{% static 'high_plains_hema/css/style.css' %}">
+        <script src="path/to/script" defer></script>
+    </head>
+    <body>
+        <nav><img src="{% static 'high_plains_hema/images/logo-tall-black@2x.png' %}"></nav>
+        <main>
+            {% block content %}{% endblock content %}
+        </main>
+        <footer></footer>
+    </body>
+</html>
