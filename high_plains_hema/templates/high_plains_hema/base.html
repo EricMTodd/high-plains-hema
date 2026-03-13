@@ -4,15 +4,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>High Plains HEMA || HEMA Alliance Cheyenne, Wyoming</title>
+        <title>High Plains HEMA | HEMA Alliance | Cheyenne, Wyoming</title>
         <link rel="stylesheet" href="{% static 'high_plains_hema/css/style.css' %}">
-        <script src="path/to/script" defer></script>
     </head>
     <body>
-        <nav><img src="{% static 'high_plains_hema/images/logo-tall-black@2x.png' %}"></nav>
+        <nav>
+            {% include 'high_plains_hema/nav.html' %}
+        </nav>
         <main>
-            {% block content %}{% endblock content %}
+            {% block content %}{% endblock %}
         </main>
-        <footer></footer>
+        <footer>
+            {% include 'high_plains_hema/footer.html' %}
+        </footer>
     </body>
 </html>

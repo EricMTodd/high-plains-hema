@@ -1,5 +1,13 @@
 :root {
+    /*Layout*/
     --nav-height: 100px;
+
+    /*Color palette*/
+    --onyx: #0C1713;
+    --ink-black: #001A23;
+    --grey: #7E7F83;
+    --brick-ember: #BF0603;
+    --platinum: #F3F3F4;
 }
 
 * {
@@ -8,30 +16,39 @@
 
 body {
     margin: 0 auto;
-    padding: 0 12.5%;
-    background-color: white;
+    padding: 0 8vw;
+    background-color: var(--platinum);
+}
+
+h1 {
+    margin: 0;
 }
 
 nav {
     height: var(--nav-height);
+    border-bottom: 1px solid var(--grey);
     position: sticky;
     top: 0;
-    padding: 0 15px;
+    background-color: var(--platinum);
+    z-index: 99;
     display: flex;
     align-items: center;
-    background-color: white;
 }
 
-nav > img {
-    height: calc(var(--nav-height) - 30px);
+nav > a > img {
+    height: 80px;
+    width: auto;
 }
 
 main {
-    height: calc(100vh - var(--nav-height));
-    background-color: whitesmoke;
+
 }
 
 footer {
-    height: 100px;
-    background-color: white;
+    height: 200px;
+}
+
+div {
+    height: 80vh;
+    border-bottom: 1px solid var(--grey);
 }
