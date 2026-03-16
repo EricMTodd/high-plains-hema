@@ -1,0 +1,94 @@
+/*Global Selectors*/
+:root {
+    --nav-height: 128px;
+    --hema-navy: #152349;
+    --hema-red: #ff4b34;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Element Selectors*/
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 8vw;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: var(--hema-red);
+}
+
+nav {
+    height: var(--nav-height);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 0 8vw;
+    justify-content: space-between;
+}
+
+main {
+
+}
+
+main > div {
+    border-bottom: 1px solid black;
+    min-height: 80vh;
+    padding: 0 8vw;
+    scroll-margin-top: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+}
+
+div > * {
+    width: 40%;
+    margin: auto 0;
+}
+
+h1 {
+    margin: 0;
+    width: 100%;
+}
+
+p, ul, li {
+    width: 100%;
+    margin: 1.6rem 0;
+}
+
+footer {
+    height: calc(var(--nav-height) * 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Class Selectors*/
+.nav-logo {
+    height: calc(var(--nav-height) * 0.8);
+}
+
+.nav-links > a {
+    padding-left: 16px;
+}
+
+/*ID Selectors*/
